@@ -1,0 +1,8 @@
+<div id="app">
+  <h2>{{ var_php_to_mustache }}</h2>
+  <h1 v-text="message"></h1>
+
+  {{! Importar otros ficheros de mustache, aunque es solo para definir el esqueleto, 
+  si se trabaja con VueJS utilice solo un fichero y diferentes componentes}}
+  {{>local_student_reports/template_import}}
+</div>
