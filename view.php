@@ -8,8 +8,12 @@
     $url = "/local/social_course/view.php";
     local_social_course_set_page($course, $url);
 
-    // $PAGE->requires->js_call_amd('local_social_course/main','init', ['content' => $content]);
+    $content = array(
+        "strings" => "Hello world! From: " . get_string("pluginname", "local_social_course")
+    );
+
+    $PAGE->requires->js_call_amd('local_social_course/main','init', $content);
     
     echo $OUTPUT->header();
-    echo $OUTPUT->render_from_template('local_social_course/publications', array());
+    echo $OUTPUT->render_from_template('local_social_course/publications', $content);
     echo $OUTPUT->footer();

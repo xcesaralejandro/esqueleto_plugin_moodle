@@ -7,10 +7,10 @@ define([],function() {
   "use strict";
   window.requirejs.config({
     paths: {
-      "vue" : M.cfg.wwwroot + '/local/student_reports/js/vue',
-      "vuetify" : M.cfg.wwwroot + '/local/student_reports/js/vuetify',
-      "axios" : M.cfg.wwwroot + '/local/student_reports/js/axios',
-      "moment" : M.cfg.wwwroot + '/local/student_reports/js/moment',
+      "vue" : M.cfg.wwwroot + '/local/social_course/js/vue',
+      "vuetify" : M.cfg.wwwroot + '/local/social_course/js/vuetify',
+      "axios" : M.cfg.wwwroot + '/local/social_course/js/axios',
+      "moment" : M.cfg.wwwroot + '/local/social_course/js/moment',
     },
     shim: {
       'vue' : {exports: 'vue'},
